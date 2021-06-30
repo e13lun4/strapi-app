@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modules",
+  "info": {
+    "name": "Modules",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "discription": {
+      "type": "string"
+    },
+    "course": {
+      "via": "modules",
+      "model": "course"
+    },
+    "access_level": {
+      "model": "access-level",
+      "via": "modules"
+    }
+  }
+}

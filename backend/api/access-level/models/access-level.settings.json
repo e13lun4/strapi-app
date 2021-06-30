@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "access_levels",
+  "info": {
+    "name": "access_level"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "modules": {
+      "via": "access_level",
+      "collection": "modules"
+    }
+  }
+}
