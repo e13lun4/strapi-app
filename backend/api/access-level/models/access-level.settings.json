@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "access_levels",
   "info": {
-    "name": "access_level"
+    "name": "Groups",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,9 +15,13 @@
     "title": {
       "type": "string"
     },
-    "modules": {
-      "via": "access_level",
-      "collection": "modules"
+    "courses": {
+      "collection": "course",
+      "via": "group"
+    },
+    "users_permissions_role": {
+      "plugin": "users-permissions",
+      "model": "role"
     }
   }
 }

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "lessons",
+  "collectionName": "theories",
   "info": {
-    "name": "Lesson",
+    "name": "Theory",
     "description": ""
   },
   "options": {
@@ -18,10 +18,6 @@
     "content": {
       "type": "richtext"
     },
-    "module": {
-      "via": "lessons",
-      "model": "modules"
-    },
     "example": {
       "collection": "file",
       "via": "related",
@@ -36,6 +32,10 @@
     },
     "description": {
       "type": "string"
+    },
+    "module": {
+      "via": "theories",
+      "model": "modules"
     }
   }
 }

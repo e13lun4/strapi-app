@@ -21,6 +21,10 @@
     "modules": {
       "via": "course",
       "collection": "modules"
+    },
+    "group": {
+      "via": "courses",
+      "model": "access-level"
     }
   }
 }

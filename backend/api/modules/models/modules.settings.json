@@ -15,16 +15,24 @@
     "title": {
       "type": "string"
     },
-    "discription": {
+    "description": {
       "type": "string"
     },
     "course": {
       "via": "modules",
       "model": "course"
     },
-    "access_level": {
-      "model": "access-level",
-      "via": "modules"
+    "theories": {
+      "collection": "theory",
+      "via": "module"
+    },
+    "homework": {
+      "via": "module",
+      "collection": "homeworks"
+    },
+    "lessons": {
+      "via": "module",
+      "collection": "lesson"
     }
   }
 }

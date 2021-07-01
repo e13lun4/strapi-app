@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "lessons",
+  "collectionName": "homeworks",
   "info": {
-    "name": "Lesson",
+    "name": "homeworks",
     "description": ""
   },
   "options": {
@@ -18,11 +18,7 @@
     "content": {
       "type": "richtext"
     },
-    "module": {
-      "via": "lessons",
-      "model": "modules"
-    },
-    "example": {
+    "homeworkImage": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -36,6 +32,10 @@
     },
     "description": {
       "type": "string"
+    },
+    "module": {
+      "via": "homework",
+      "model": "modules"
     }
   }
 }
